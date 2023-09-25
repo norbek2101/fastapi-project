@@ -4,3 +4,4 @@ sqlalchemy
 python-jose[cryptography]
 passlib[bcrypt]
 python-multipart
+psycopg2-binary #in windows pip install psycopg2
