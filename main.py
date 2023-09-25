@@ -71,7 +71,7 @@ async def update_user_info(user_dep: user_dependency,  user_res:CreateUserReques
 
 @app.delete("/user/{user_id}", status_code=status.HTTP_200_OK, tags=["users"])
 async def delet_user(user_dep: user_dependency, user_id: int, db: db_dependency):
-    """ To update user info with given id """
+    """ To delete selected user with given id """
 
     user_by_id = db.query(models.User).filter(models.User.id == user_id).first()
 
